@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 12vh;
+    background: #f8f8f8;
+    padding-left: 2px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img {
+    height: 5cm;
+}
+nav a {
+    margin: 0 10px;
+    font-size: 120%;
+    text-decoration: none;
+    color: #333;
+}
+nav a:hover{
+    color: #1eff00c5;
+}
+.hero {
+    background: url('introbag.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 55vh;
+}
+.bkl{
+    height: 100%;
+    background-color: #2d45248e;   
+}
+.bkl h1 {
+    padding-top: 80px;
+    font-size: 2.5em;
+}
+.hero p {
+    font-size: 1.2em;
+}
+.hero .cta {
+    background: #e67e22;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+.section {
+    padding: 40px 10%;
+    text-align: center;
+}
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 5ch;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cb{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    height: 30ch;
+    width: 25ch;
+    border: solid;
+    border-radius: 15px;
+    background-color: rgb(175, 194, 164);
+    box-shadow: #516a32;
+}
+.card img{
+    height: 75%;
+}
+.card p{
+    text-align: center;
+    font-size: 2ch;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.ingri{
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    font-size: 3vh;
+    background-color: #E7E8D1;
+    border-radius: 100px;
+}
+.ingri h2{
+    border-bottom-right-radius:100px 100px;
+    border-bottom-left-radius:100px 100px;
+    text-align: center;
+    width: 50%;
+    background-color: #636389;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #9aee8f;
+    font-size: 4ch;
+}
+.crdset{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flip-card {
+    margin: 40px;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px; 
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    background-color: #A7BEAE;
+    color: #B85042;
+    transform: rotateY(180deg);
+    border-radius: 50px;
+  }
+  .flip-card-back h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+  }
+  .flip-card-back p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+  }
+  
+.secbdy{
+    display: flex;
+    justify-content: space-around;
+}
+.products{
+    height: max-content;
+    border-radius: 20px;
+    background: linear-gradient(90deg,#A9F1DF,#b0e1ab);
+    animation: bg 5s Linear infinite;
+}
+@keyframes bg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+#products h2{
+    background: linear-gradient(90deg,#A9F1DF,#FFBBBB);
+    animation: bg 5s Linear infinite;
+    width: 30vw;
+    margin-left: 31%;
+    margin-bottom: -5px;
+    border-top-right-radius:100px 100px;
+    border-top-left-radius:100px 100px;
+}
+.categories{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    
+}
+.catprd{
+    display: flex;
+    width: 95%;
+    margin-top: 4vh;
+    overflow-x: scroll;
+    white-space: nowrap;
+    height: 40vh;
+}
+.catprd::-webkit-scrollbar {
+    height: 5px; 
+}
+.catprd::-webkit-scrollbar-thumb {
+    background-color: #516a32; 
+    border-radius: 10px;
+}
+#catnm h3{
+   text-align: center;
+   margin-top: 30%;
+   font-size: 60px;
+   font-family: cursive;
+   color: #00ff08;
+}
+.cardct{
+    height: 35vh;
+    min-width: 200px;
+    text-wrap: pretty;
+    margin-left: 2ch;
+}
+.footer {
+    background: #333;
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}

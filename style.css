@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #DCDCDC;
 }
 header {
     height: 12vh;
@@ -129,8 +130,8 @@ nav a:hover{
     backface-visibility: hidden;
   }
   .flip-card-back {
-    background-color: #A7BEAE;
-    color: #B85042;
+    background-color: #c5efd2;
+    color: #e26b5b;
     transform: rotateY(180deg);
     border-radius: 50px;
   }
@@ -150,8 +151,8 @@ nav a:hover{
 .products{
     height: max-content;
     border-radius: 20px;
-    background: linear-gradient(90deg,#A9F1DF,#b0e1ab);
-    animation: bg 5s Linear infinite;
+    background: linear-gradient(90deg,#85bdd5,#cfaadd);
+    /* animation: bg 5s Linear infinite; */
 }
 @keyframes bg{
     100%{
@@ -159,7 +160,7 @@ nav a:hover{
     }
 }
 #products h2{
-    background: linear-gradient(90deg,#A9F1DF,#FFBBBB);
+    background: linear-gradient(90deg,#F0F8FF,#FFF5EE);
     animation: bg 5s Linear infinite;
     width: 30vw;
     margin-left: 31%;
@@ -185,7 +186,7 @@ nav a:hover{
     height: 5px; 
 }
 .catprd::-webkit-scrollbar-thumb {
-    background-color: #516a32; 
+    background-color: #c4d7ac; 
     border-radius: 10px;
 }
 #catnm h3{

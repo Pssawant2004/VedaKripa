@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #DCDCDC;
+    background-color: #ffffff;
+    cursor: url("images\pngwing.com (6).png");
 }
 header {
     height: 12vh;
-    background: #f8f8f8;
+    background: #f2f2f2;
     padding-left: 2px;
     padding-right: 10px;
     display: flex;
@@ -68,12 +69,17 @@ nav a:hover{
     width: 25ch;
     border: solid;
     border-radius: 15px;
-    background-color: rgb(175, 194, 164);
-    box-shadow: #516a32;
+    background-color: #52ab989f;
+    box-shadow: #473a3ab2 10px 10px 10px;
+}
+.card:hover{
+    background-color: #c8d8e4;
+    box-shadow: #473a3ab2 5px 5px 5px;
+    transform: translateY(-10px);
 }
 .card img{
     height: 75%;
-}
+ }
 .card p{
     text-align: center;
     font-size: 2ch;
@@ -86,17 +92,18 @@ nav a:hover{
     width: 90%;
     text-align: center;
     font-size: 3vh;
-    background-color: #E7E8D1;
+    background-color: #c8d8e4;
     border-radius: 100px;
+    box-shadow: #473a3ab2 18px 18px 20px;
 }
 .ingri h2{
     border-bottom-right-radius:100px 100px;
     border-bottom-left-radius:100px 100px;
     text-align: center;
     width: 50%;
-    background-color: #636389;
+    background-color: #52ab98;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #9aee8f;
+    color: #2b6777;
     font-size: 4ch;
 }
 .crdset{
@@ -130,8 +137,8 @@ nav a:hover{
     backface-visibility: hidden;
   }
   .flip-card-back {
-    background-color: #c5efd2;
-    color: #e26b5b;
+    background-color: #f2f2f2;
+    color: #2b6777;
     transform: rotateY(180deg);
     border-radius: 50px;
   }
@@ -151,17 +158,32 @@ nav a:hover{
 .products{
     height: max-content;
     border-radius: 20px;
-    background: linear-gradient(90deg,#85bdd5,#cfaadd);
-    /* animation: bg 5s Linear infinite; */
+    background-color: #25ab98;
+    animation: bg 10s Linear infinite;
+    box-shadow: #473a3ab2 18px 18px 20px;
+
 }
 @keyframes bg{
+    0%{
+        background-color: #f2f2f2;
+    }
+    25%{
+        background-color: #7bff8d;
+    }
+    50%{
+        background-color: #b6ffb0;
+    }
+    75%{
+        background-color: #7bff8d;
+    }
     100%{
-        filter: hue-rotate(360deg);
+        /* filter: hue-rotate(360deg); */
+        background-color: #c8d8e4;
     }
 }
 #products h2{
-    background: linear-gradient(90deg,#F0F8FF,#FFF5EE);
-    animation: bg 5s Linear infinite;
+    background: #c8d8e4;
+    animation: bg 10s Linear infinite;
     width: 30vw;
     margin-left: 31%;
     margin-bottom: -5px;
@@ -194,7 +216,7 @@ nav a:hover{
    margin-top: 30%;
    font-size: 60px;
    font-family: cursive;
-   color: #00ff08;
+   color: #2b6777;
 }
 .cardct{
     height: 35vh;

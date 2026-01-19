@@ -172,6 +172,19 @@ nav a:hover {
     gap: 30px;
     margin-top: 40px;
 }
+/* FIX: Benefits section image layering */
+.card img {
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.card h3,
+.card p {
+    position: relative;
+    z-index: 2;
+}
 
 .card {
     background: var(--card-bg);
@@ -185,10 +198,6 @@ nav a:hover {
     transform: translateY(-8px);
 }
 
-.card img {
-    height: 120px;
-    margin-bottom: 15px;
-}
 
 /* =====================
    INGREDIENT FLIP CARDS
@@ -291,3 +300,4 @@ nav a:hover {
     font-weight: bold;
     cursor: pointer;
 }
+
